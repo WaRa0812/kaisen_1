@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<htm lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>海戦判定１</title>
+    </head>
+    <body>
+        <header>
+            <h1><span style="color:rgb(52, 52, 199)">海戦判定１</span></h1>
+            <a href='https://line.me/ti/g2/v344OlgpQ2boaS6Wafwpl2rtKDO7FoE_ioUT1g?utm_source=invitation&utm_medium=link_copy&utm_campaign=default'>ツール作成元</a>
+        </header>
+        <main>
+            <h2>【性能】</h2>
+                <form method ="POST" action="/result">
+                    <table border="1">
+                        <tr><th>基準排水量：</th><th><input type="text" value="0" name="bhaisui"></th></tr>
+                        <tr><th>舷側装甲：</th><th><input type="text" value="0" name="bsoukou"></th></tr>
+                        <tr><th>全長：</th><th><input type="text" value="1" name="bzentyou"></th></tr>
+                        <tr><th>主砲口径：</th><th><input type="text" value="0" name="bsyuhoukoukei"></th></tr>
+                        <tr><th>主砲合計門数：</th><th><input type="text" value="0" name="bsyuhousuu"></th></tr>
+                        <tr><th>副砲口径：</th><th><input type="text" value="0" name="bhukuhoukoukei"></th></tr>
+                        <tr><th>副砲合計門数：</th><th><input type="text" value="0" name="bhukuhousuu"></th></tr>
+                        <tr><th>魚雷口径：</th><th><input type="text" value="0" name="bgyoraikoukei"></th></tr>
+                        <tr><th>魚雷門数：</th><th><input type="text" value="0" name="bgyoraisuu"></th></tr>
+                        <tr><th>高角砲口径：</th><th><input type="text" value="0" name="bkoukakukoukei"></th></tr>
+                        <tr><th>高角砲合計門数：</th><th><input type="text" value="0" name="bkoukakusuu"></th></tr>
+                        <tr><th>機関砲口径１：</th><th><input type="text" value="0" name="bkikankoukei1"></th></tr>
+                        <tr><th>機関砲合計門数１：</th><th><input type="text" value="0" name="bkikansuu1"></th></tr>
+                        <tr><th>機関砲口径２：</th><th><input type="text" value="0" name="bkikankoukei2"></th></tr>
+                        <tr><th>機関砲合計門数２：</th><th><input type="text" value="0" name="bkikansuu2"></th></tr>
+                        <tr><th>爆雷数：</th><th><input type="text" value="0" name="bbaku"></th></tr>
+                        <tr><th>機雷数：</th><th><input type="text" value="0" name="bki"></th></tr>
+                        <tr><th>速度：</th><th><input type="text" value="0" name="bsoku"></th></tr>
+                    </table>
+                    <button name="calc" value="算出">さんしゅつ</button>
+                </form>
+            <h2>【ステータス】</h2>
+                <table border="1">
+                <tr><th>体力：</th><th>{{tairyoku}}</th></tr>
+                <tr><th>砲火力：</th><th>{{hou}}</th></tr>
+                <tr><th>魚雷火力：</th><th>{{gyo1}} × {{gyo2}}</th></tr>
+                <tr><th>爆雷火力：</th><th>{{baku}}</th></tr>
+                <tr><th>機雷火力：</th><th>{{ki}}</th></tr>
+                <tr><th>対空火力：</th><th>{{taikuu}}</th></tr>
+                <tr><th>回避率：</th><th>{{soku}}％</th></tr>
+                </table>
+        </main>
+    </body>
+</html>
