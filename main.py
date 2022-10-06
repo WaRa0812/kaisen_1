@@ -4,7 +4,7 @@ import math
 
 @app.route('/')
 def base():
-    return render_template('base.html')
+    return render_template('index.html')
 
 @app.route('/result', methods=['GET', 'POST'])
 def result():
@@ -36,4 +36,4 @@ def result():
     ki = int(bki)*1000
     bsoku= request.form['bsoku']
     soku = bsoku
-    return render_template('base.html', tairyoku=tairyoku, hou=hou, gyo1=gyo1, gyo2=gyo2, baku=baku, ki=ki, soku=soku, taikuu=taikuu) 
+    return render_template('index.html', tairyoku=tairyoku, hou=hou, gyo1=gyo1, gyo2=gyo2, baku=baku, ki=ki, soku=soku, taikuu=taikuu) 
